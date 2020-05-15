@@ -1,0 +1,21 @@
+1. Dynamic styling: 
+- This module shows how to set Styles and Class Name for styling Dynamically
+
+- Setting Style Dynamically: 
++, notice the variable 'style', the background color got changed
+
+- Setting Class Name Dynamically: 
++, notice the use of classes[] array
+
+2. Using Radium: 
+- To code pseudo classes like :hover and using media query in javascript
+- The alternative way would be do all the styling in the .css file or 
+using anther 3rd library down below
+
+- You can see the example in App.js, search for ':hover' and
+search for 'media' in Person.js to understand more
+(notice that this is only searchable in the 1st commit of the code in github
+other commit show the use of 'Styled Component' library)
+- Also notice the use of <StyleRoot> tag in App.js
+
+3. Styled Component: 
