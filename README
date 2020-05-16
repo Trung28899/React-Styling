@@ -19,6 +19,11 @@ other commit show the use of 'Styled Component' library)
 - Also notice the use of <StyleRoot> tag in App.js
 
 3. Styled Component: 
+Why using styled component ? 
+own opinion:
+- For easier Dynamic styling
+- More maintainable and reusable block of code
+researched opinion: later researching needed
 
 a. Installation, Documentation and Importation: 
 - Go to: https://styled-components.com/
@@ -29,6 +34,8 @@ npm install --save styled-components
 b. How to use: 
 - In App.js, notice the use of 'const StyledButton'
 - In Person.js, notice the use of 'const StyledDiv'
+- Notice the use of alt attribute in <StyledButton>
+tag
 
 - The 'style' variable which is imported has access to all
 kinds of html tags like: div, button, a, p, h1, etc...
