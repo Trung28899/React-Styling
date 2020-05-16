@@ -14,8 +14,38 @@ using anther 3rd library down below
 
 - You can see the example in App.js, search for ':hover' and
 search for 'media' in Person.js to understand more
-(notice that this is only searchable in the 1st commit of the code in github
+(notice that this is only searchable in the 1st and 2nd commit of the code in github
 other commit show the use of 'Styled Component' library)
 - Also notice the use of <StyleRoot> tag in App.js
 
 3. Styled Component: 
+
+a. Installation, Documentation and Importation: 
+- Go to: https://styled-components.com/
+- Type in this command for installation: 
+npm install --save styled-components
+- import styled from 'styled-components'
+
+b. How to use: 
+- In App.js, notice the use of 'const StyledButton'
+- In Person.js, notice the use of 'const StyledDiv'
+
+- The 'style' variable which is imported has access to all
+kinds of html tags like: div, button, a, p, h1, etc...
+so you can write something like: 
+style.h1 or style.a
+
+- Passing styling in Css code between the back tick to apply 
+styling. Notice that it is the styling in css, when in Radium 
+we style in javascript, there is a slight difference. 
+
+- Can also use javascript within the backtick for Dynamic styling, 
+see example of 'const StyledButton' and 'const StyledDiv'
+
+c. Some background info: 
+- The compiler will get the styled variable, transform it into 
+css and put it into the beginning of the html page with a class. 
+The html tag will get automatically applied the class of styling on
+the top of the page
+- See video 71 or see the code in the source code of the page for
+further understanding
