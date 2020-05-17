@@ -13,7 +13,7 @@ example in git commit 1-4
 
 -----------------------------------------------------------------------------------------
 
-2. Using Radium: 
+2. Using Radium: 1st and 2nd commit
 ----------------
 
 - To code pseudo classes like :hover and using media query in javascript
@@ -28,7 +28,7 @@ other commit show the use of 'Styled Component' library)
 
 -----------------------------------------------------------------------------------------
 
-3. Styled Component:
+3. Styled Component: commit 4th
 -------------------- 
 Why using styled component ? 
 own opinion:
@@ -70,5 +70,59 @@ further understanding
 - See git commit 4th for best example and Documentation
 
 -----------------------------------------------------------------------------------------
-4. Css Module (most preferred way of styling in React): 
+4. Css Module (most preferred way of styling in React): latest git commit
+Why use CSS Module ?
+- Styling CSS is customed for different component since the 
+styling class compiled has an unique class name, not the class name written
+in the css file. Therefore, the styling is not globally applied
 
+- Styling css in css has more IDE supported than styling css in js file
+
+- Load faster since doesn't have to import 3rd library package
+
+a. Installation of CSS Module: 
+- Check in package.json: 
+under "dependencies": "react-scripts": "1.0.13"
+if using 2.x or higher version, watch video 74 at 2:37
+
+- run command: npm run eject > file will be updated
+(might get an error and need to push a new commit to github for the
+error to go away)
+
+- After run the command above 
++, Go to: config/webpack.config.dev.js > 
+Look for "test: /\.css$/", under "importLoaders: 1," add the following: 
+modules:true, 
+localIdentName: '[name]__[local]__[hash:base64:5]'
+
++, Go to: config/webpack.config.prod.js
+Look for "test: /\.css$/", under "sourceMap: shouldUseSourceMap,", add the following: 
+modules:true, 
+localIdentName: '[name]__[local]__[hash:base64:5]'
+
++, Now go to App.js, add the following: 
+import classes from "./App.css";
+instead of
+import "./App.css"; 
+this will import all the classes in the App.css file
+
+b. How to code CSS Module: 
+
+- In App.js, Look in the JSX code below the return
+, see how className is imported to know how to use css module
+
+Instead of "className='Button'", we use:
+"className={classes.Button}" 
+
+see video 73, minute 9:20 to understand the working of CSS module
+
+- DYNAMIC STYLING IN CSS MODULE: 
++, Look in App.css
++, In App.js, look for the use of 'btnClass'
+
+- CSS Module is applied also in Person.js
+
+
+
+MORE ABOUT CSS MODULE: 
+https://github.com/css-modules/css-modules
