@@ -1,13 +1,21 @@
 1. Dynamic styling: 
+-------------------
+
 - This module shows how to set Styles and Class Name for styling Dynamically
 
 - Setting Style Dynamically: 
 +, notice the variable 'style', the background color got changed
+The code is in the commented part for all commit on git 
 
 - Setting Class Name Dynamically: 
 +, notice the use of classes[] array
+example in git commit 1-4
+
+-----------------------------------------------------------------------------------------
 
 2. Using Radium: 
+----------------
+
 - To code pseudo classes like :hover and using media query in javascript
 - The alternative way would be do all the styling in the .css file or 
 using anther 3rd library down below
@@ -18,7 +26,10 @@ search for 'media' in Person.js to understand more
 other commit show the use of 'Styled Component' library)
 - Also notice the use of <StyleRoot> tag in App.js
 
-3. Styled Component: 
+-----------------------------------------------------------------------------------------
+
+3. Styled Component:
+-------------------- 
 Why using styled component ? 
 own opinion:
 - For easier Dynamic styling
@@ -48,7 +59,7 @@ we style in javascript, there is a slight difference.
 
 - Can also use javascript within the backtick for Dynamic styling, 
 see example of 'const StyledButton' and 'const StyledDiv'
-
+3
 c. Some background info: 
 - The compiler will get the styled variable, transform it into 
 css and put it into the beginning of the html page with a class. 
@@ -56,3 +67,8 @@ The html tag will get automatically applied the class of styling on
 the top of the page
 - See video 71 or see the code in the source code of the page for
 further understanding
+- See git commit 4th for best example and Documentation
+
+-----------------------------------------------------------------------------------------
+4. Css Module (most preferred way of styling in React): 
+
