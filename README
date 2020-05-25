@@ -1,0 +1,38 @@
+1. How to dynamically change style: 
+- Using if in javascript and use the inline object that hold
+the styling for the item to access property > that way you're able
+to change those properties by your will
+- Remember: in React, everything is javascript so you can change whatever
+by your will
+
+- Notice how className got changed dynamically: 
++, styling classes are in App.css 
++, note the array of classes[] appear before the return
+
+2. RADIUM: FOR MEDIA QUERY AND HOVER STYLING
+- The use of radium:  
++, Unable to do inline styling for hover button and media query in JSX
++, Can actually do it with App.css > but it will apply the style for 
+multiple components
+> Use radium for separate component inline media query and hover styling. 
+It is a 3rd party package
+
+- How to install radium ? 
++, npm install --save radium
+
+after install, need to add and change the following code: 
++, import Radium from "radium";
+or down below if you need to use StyleRoot for enabling media query
++, import Radium, { StyleRoot } from "radium";
++, export default Radium(App);
+
+- How to use radium: 
++, pseudo selector are supported, see the use of 
+':hover' with in the const style object
++, Query media is used within Person.js
++, note that StyleRoot must be used in App.js 
+to enable media Query
+
+3. STYLED COMPONENTS LIBRARY: 
+
+- What is this library about: 
